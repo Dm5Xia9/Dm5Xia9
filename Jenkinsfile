@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('git') {
       steps {
-        echo 'Hello World'
+        git(url: 'https://github.com/Dm5Xia9/Dm5Xia9/tree/main', branch: 'main', changelog: true)
       }
     }
 
